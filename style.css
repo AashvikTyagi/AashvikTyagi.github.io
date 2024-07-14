@@ -18,12 +18,12 @@ header {
     font-size: 60px;
     margin: 0;
 }
-nav {
+nav { /* for the navigation in top bar */
     background-color: var(--txt-color);
     padding: 10px;
     text-align: center;
 }
-nav a {
+nav a { /* for the links in top bar */
     color: var(--hgl-color);
     font-family: Metal Mania;
     margin: 0 10px;
@@ -31,7 +31,7 @@ nav a {
 a {
     color: var(--link-color);
 }
-a.headera {
+a.headera { /* for the links in the header */
     text-decoration: none;
 }
 section {
@@ -53,6 +53,6 @@ footer {
     bottom: 0;
     right: 0;
 }
-option {
+option { /* for the dropdown */
     font-family: Archivo;
 }
