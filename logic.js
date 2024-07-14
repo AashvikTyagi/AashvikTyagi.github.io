@@ -8,6 +8,10 @@ document.head.insertAdjacentHTML('afterbegin',`
 <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
 `);
 
+document.head.insertAdjacentHTML('beforeend',`
+<link type="image/x-icon" href="https://www.daylily.com/auctionfiles/star-2.gif"></link>
+`);
+
 document.body.insertAdjacentHTML('afterbegin',`
 <script src="logic.js"></script>
 <a class="headera" href="home.html"><header>AshT</header></a>
