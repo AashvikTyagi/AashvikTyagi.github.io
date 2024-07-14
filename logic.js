@@ -9,7 +9,7 @@ document.head.insertAdjacentHTML('afterbegin',`
 `);
 
 document.head.insertAdjacentHTML('beforeend',`
-<link type="image/x-icon" href="star.png"></link>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
