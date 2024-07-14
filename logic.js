@@ -1,6 +1,7 @@
 document.head.insertAdjacentHTML('afterbegin',`
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="../favicon.png">
 <title>aashvik</title>
 <link rel="stylesheet" href="../style.css">
 <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -9,7 +10,6 @@ document.head.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
-<script src="logic.js"></script>
 <a class="headera" href="home.html"><header>AshT</header></a>
 <nav>
     <a href="home.html#about">about</a>
