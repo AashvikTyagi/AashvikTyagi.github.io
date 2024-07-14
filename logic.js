@@ -9,7 +9,7 @@ document.head.insertAdjacentHTML('afterbegin',`
 `);
 
 document.head.insertAdjacentHTML('beforeend',`
-<link type="image/x-icon" href="https://www.daylily.com/auctionfiles/star-2.gif"></link>
+<link type="image/x-icon" href="star.png"></link>
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
