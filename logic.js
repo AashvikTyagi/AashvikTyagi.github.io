@@ -8,10 +8,6 @@ document.head.insertAdjacentHTML('afterbegin',`
 <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
 `);
 
-document.head.insertAdjacentHTML('beforeend',`
-<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-`);
-
 document.body.insertAdjacentHTML('afterbegin',`
 <script src="logic.js"></script>
 <a class="headera" href="home.html"><header>AshT</header></a>
