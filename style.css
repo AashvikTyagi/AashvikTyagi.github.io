@@ -17,11 +17,13 @@ header {
     text-align: center;
     font-size: 60px;
     margin: 0;
+    border-radius: 20px 20px 0px 0px;
 }
 nav { /* for the navigation in top bar */
     background-color: var(--txt-color);
     padding: 10px;
     text-align: center;
+    border-radius: 0px 0px 20px 20px;
 }
 nav a { /* for the links in top bar */
     color: var(--hgl-color);
@@ -52,6 +54,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
+    border-top-left-radius: 20px;
 }
 option { /* for the dropdown */
     font-family: Archivo;
