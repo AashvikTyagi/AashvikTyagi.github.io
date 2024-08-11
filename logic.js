@@ -30,6 +30,7 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>clbd1</option> <!--colorblind friendly 1-->
         <option>clbd2</option> <!--colorblind friendly 2-->
         <option>bnshk</option> <!--banana shake-->
+        <option>hknw</option> <!--hacker news-->
     </select>]
     <br>
     <a href="https://www.youtube.com/@AashvikT">youtube</a> /
@@ -47,7 +48,8 @@ const colorPalettes = [
     ["#000000","#ffffff","#5478b8","#dfe5f2"],
     ["#ffffff","#000000","#ffa500","#525252"],
     ["#f2f2f2","#333333","#ffd700","#5a5a5a"],
-    ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"]
+    ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
+    ["#f6f6ef","#000000","#ff6600","#828282"]
 ]
 const colors=['--bck-color','--txt-color','--hgl-color','--link-color']
 function changePalette(){
