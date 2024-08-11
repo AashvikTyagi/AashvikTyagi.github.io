@@ -6,7 +6,6 @@ document.head.insertAdjacentHTML('afterbegin',`
 <link rel="stylesheet" href="../style.css">
 <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
@@ -30,7 +29,7 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>clbd1</option> <!--colorblind friendly 1-->
         <option>clbd2</option> <!--colorblind friendly 2-->
         <option>bnshk</option> <!--banana shake-->
-        <option>hknw</option> <!--hacker news-->
+        <option>hcknw</option> <!--hacker news-->
     </select>]
     <br>
     <a href="https://www.youtube.com/@AashvikT">youtube</a> /
@@ -49,8 +48,9 @@ const colorPalettes = [
     ["#ffffff","#000000","#ffa500","#525252"],
     ["#f2f2f2","#333333","#ffd700","#5a5a5a"],
     ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
-    ["#f6f6ef","#000000","#ff6600","#828282"]
+    ["#f6f6ef","#202020","#ff6600","#828282"]
 ]
+
 const colors=['--bck-color','--txt-color','--hgl-color','--link-color']
 function changePalette(){
     palette = colorPalettes[document.querySelector('#color-dd').selectedIndex];

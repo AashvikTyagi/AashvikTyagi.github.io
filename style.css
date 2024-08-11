@@ -5,7 +5,8 @@
     --link-color: #dfe5f2;
 }
 body {
-    font-family: Archivo;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
     background-color: var(--bck-color);
     color: var(--txt-color);
     padding: 0;
@@ -15,7 +16,7 @@ header {
     background-color: var(--hgl-color);
     color: var(--txt-color);
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     margin: 0;
     border-radius: 20px 20px 0px 0px;
 }
@@ -57,5 +58,5 @@ footer {
     border-top-left-radius: 20px;
 }
 option { /* for the dropdown */
-    font-family: Archivo;
+    font-family: Verdana, Geneva, sans-serif;
 }
