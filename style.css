@@ -26,16 +26,20 @@ nav { /* for the navigation in top bar */
     text-align: center;
     border-radius: 0px 0px 20px 20px;
 }
+a {
+    color: var(--link-color);
+}
+a:hover {
+    background-color: var(--hgl-color);
+    font-size: larger;
+}
 nav a { /* for the links in top bar */
     color: var(--hgl-color);
     font-family: Metal Mania;
     margin: 0 10px;
 }
-a {
-    color: var(--link-color);
-}
-a.headera { /* for the links in the header */
-    text-decoration: none;
+nav a:hover {
+    color:var(--txt-color)
 }
 section {
     padding: 5px;

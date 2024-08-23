@@ -9,7 +9,7 @@ document.head.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
-<a class="headera" href="home.html"><header>AshT</header></a>
+<a style="text-decoration: none" href="home.html"><header>AshT</header></a>
 <nav>
     <a href="home.html#about">about</a>
     <a href="home.html#projects">projects</a>
@@ -29,6 +29,7 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>clbd1</option> <!--colorblind friendly 1-->
         <option>clbd2</option> <!--colorblind friendly 2-->
         <option>bnshk</option> <!--banana shake-->
+        <option>mnion</option> <!--minion-->
         <option>hcknw</option> <!--hacker news-->
     </select>]
     <br>
@@ -48,7 +49,8 @@ const colorPalettes = [
     ["#ffffff","#000000","#ffa500","#525252"],
     ["#f2f2f2","#333333","#ffd700","#5a5a5a"],
     ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
-    ["#f6f6ef","#202020","#ff6600","#828282"]
+    ["#202020","#f6f6ef","#ffcd00","#828282"],
+    ["#f6f6ef","#202020","#ff6600","#1C1D1F"]
 ]
 
 const colors=['--bck-color','--txt-color','--hgl-color','--link-color']
