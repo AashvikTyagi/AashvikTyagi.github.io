@@ -30,6 +30,7 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>clbd2</option> <!--colorblind friendly 2-->
         <option>bnshk</option> <!--banana shake-->
         <option>mnion</option> <!--minion-->
+        <option>invyc</option> <!--dark hacker news-->
         <option>hcknw</option> <!--hacker news-->
     </select>]
     <br>
@@ -50,7 +51,8 @@ const colorPalettes = [
     ["#f2f2f2","#333333","#ffd700","#5a5a5a"],
     ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
     ["#202020","#f6f6ef","#ffcd00","#828282"],
-    ["#f6f6ef","#202020","#ff6600","#1C1D1F"]
+    ["#202020","#f6f6ef","#ff6600","#ffffff"],
+    ["#f6f6ef","#202020","#ff6600","#1c1d1f"]
 ]
 
 const colors=['--bck-color','--txt-color','--hgl-color','--link-color']
