@@ -39,7 +39,12 @@ nav a { /* for the links in top bar */
     margin: 0 10px;
 }
 nav a:hover {
-    color:var(--txt-color)
+    color: var(--txt-color)
+}
+::selection {
+    color: var(--bck-color);
+    background: var(--txt-color);
+    font-style: italic;
 }
 section {
     padding: 5px;
