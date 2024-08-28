@@ -32,6 +32,7 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>mnion</option> <!--minion-->
         <option>invyc</option> <!--dark hacker news-->
         <option>hcknw</option> <!--hacker news-->
+        <option>lspcl</option> <!--la special-->
     </select>]
     <br>
     <a href="https://www.youtube.com/@AashvikT">youtube</a> /
@@ -52,7 +53,8 @@ const colorPalettes = [
     ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
     ["#202020","#f6f6ef","#ffcd00","#828282"],
     ["#202020","#f6f6ef","#ff6600","#ffffff"],
-    ["#f6f6ef","#202020","#ff6600","#1c1d1f"]
+    ["#f6f6ef","#202020","#ff6600","#1c1d1f"],
+    ["#070707","#00a9a6","#fbf1c7","#de423e"]
 ]
 
 const colors=['--bck-color','--txt-color','--hgl-color','--link-color']
