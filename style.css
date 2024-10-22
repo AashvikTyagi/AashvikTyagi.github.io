@@ -1,8 +1,8 @@
 :root {
-    --bck-color: #000000;
-    --txt-color: #ffffff;
-    --hgl-color: #5478b8;
-    --link-color: #dfe5f2;
+    --bck-color: #202020;
+    --txt-color: #f6f6ef;
+    --hgl-color: #6acf65;
+    --link-color: #ffffff;
 }
 body {
     font-family: Verdana, Geneva, sans-serif;
@@ -31,7 +31,7 @@ a {
 }
 a:hover {
     background-color: var(--hgl-color);
-    font-size: larger;
+    font-size: xx-large;
 }
 nav a { /* for the links in top bar */
     color: var(--hgl-color);

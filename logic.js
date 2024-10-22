@@ -25,11 +25,13 @@ document.body.insertAdjacentHTML('beforeend',`
     <select id="color-dd" onchange="changePalette()">
         <option>pulpe</option> <!--purple/green-->
         <option>b/o/w</option> <!--black on white-->
-        <option selected='selected'>w/o/b</option> <!--white on black-->
+        <option>w/o/b</option> <!--white on black-->
         <option>clbd1</option> <!--colorblind friendly 1-->
         <option>clbd2</option> <!--colorblind friendly 2-->
         <option>bnshk</option> <!--banana shake-->
         <option>mnion</option> <!--minion-->
+        <option selected='selected'>tensy</option> <!--teensy 4.1 green-->
+        <option>minty</option> <!--grey mint green-->
         <option>invyc</option> <!--dark hacker news-->
         <option>hcknw</option> <!--hacker news-->
         <option>lspcl</option> <!--la special-->
@@ -52,6 +54,8 @@ const colorPalettes = [
     ["#f2f2f2","#333333","#ffd700","#5a5a5a"],
     ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
     ["#202020","#f6f6ef","#ffcd00","#828282"],
+    ["#202020","#f6f6ef","#6acf65","#ffffff"],
+    ["#ffffff","#202020","#28d28c","#292929"],
     ["#202020","#f6f6ef","#ff6600","#ffffff"],
     ["#f6f6ef","#202020","#ff6600","#1c1d1f"],
     ["#070707","#00a9a6","#fbf1c7","#de423e"]
