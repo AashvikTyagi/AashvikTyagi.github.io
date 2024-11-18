@@ -1,5 +1,5 @@
 # Well hello there!
-This repo hosts the entirety of my website, [_aashvik.com_](http://www.aashvik.com/), a home to my projects and a portfolio of sorts.
+This repo hosts the entirety of my website, [_aashvik.com_](https://aashvik.com/), a home to my projects and a portfolio of sorts.
 
 ## Why here?
 I wanted to write my own site, to use custom js/css for interactive elements, and to use my custom domain with free hosting, so I made this to replace my ugly wordpress(.com) site.
