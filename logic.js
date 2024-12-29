@@ -18,7 +18,6 @@ document.body.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('beforeend',`
-<br><br>
 <footer>
     © 2024 AshT. All rights burgled by raccoons.
     <label for="color-dd">[palette: </label>
