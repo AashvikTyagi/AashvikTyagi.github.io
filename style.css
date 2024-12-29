@@ -1,71 +1,28 @@
 :root {
-    --bck-color: #202020;
-    --txt-color: #f6f6ef;
-    --hgl-color: #6acf65;
-    --link-color: #ffffff;
+    --bck-color: #000000;
+    --txt-color: #ffffff;
+    --hgl-color: #5478b8;
+    --link-color: #dfe5f2;
+    font-family: Inter, sans-serif;
 }
 body {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
+    font-size: 90%;
+    color: var(--txt-color);
     background-color: var(--bck-color);
-    color: var(--txt-color);
-    padding: 0;
 }
-header {
-    font-family: Rock Salt;
-    background-color: var(--hgl-color);
-    color: var(--txt-color);
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    border-radius: 20px 20px 0px 0px;
-}
-nav { /* for the navigation in top bar */
-    background-color: var(--txt-color);
-    padding: 10px;
-    text-align: center;
-    border-radius: 0px 0px 20px 20px;
-}
-a {
-    color: var(--link-color);
-}
+a {color: var(--link-color)}
 a:hover {
+    font-size: x-large;
     background-color: var(--hgl-color);
-    font-size: xx-large;
-}
-nav a { /* for the links in top bar */
-    color: var(--hgl-color);
-    font-family: Metal Mania;
-    margin: 0 10px;
-}
-nav a:hover {
-    color: var(--txt-color)
 }
 ::selection {
     color: var(--bck-color);
     background: var(--txt-color);
-    font-style: italic;
 }
-section {
-    padding: 5px;
-}
-h2 {
-    font-family: Metal Mania;
-}
-ul {
-    list-style-type: circle
-}
-footer {
-    background-color: var(--hgl-color);
-    font-size: 15px;
-    font-family: Metal Mania;
-    text-align: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-top-left-radius: 20px;
-}
-option { /* for the dropdown */
-    font-family: Verdana, Geneva, sans-serif;
+div.header, footer {background-color: var(--hgl-color)}
+div.header a, footer a {color: var(--txt-color)}
+div.header a:hover, footer a:hover {
+    font-size: inherit;
+    color: var(--hgl-color);
+    background-color: var(--txt-color);
 }
