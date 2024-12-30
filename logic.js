@@ -39,7 +39,7 @@ document.body.insertAdjacentHTML('beforeend',`
     <a href="https://github.com/AashvikTyagi">gh</a> /
     <a href="https://stackoverflow.com/users/17048834/aashvikt">so</a> /
     <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a> /
-    <a href="https://www.reddit.com/user/aashviktyagi/">red</a> /
+    <a href="https://www.reddit.com/user/aashviktyagi">red</a> /
     <a href="http://discordapp.com/users/aashvikt">disc</a>
 </footer>
 `);
