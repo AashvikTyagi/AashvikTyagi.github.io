@@ -4,7 +4,6 @@ document.head.insertAdjacentHTML('afterbegin',`
 <link rel="icon" type="image/png" href="/favicon.png">
 <title>aashvik</title>
 <link rel="stylesheet" href="/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 `);
 
