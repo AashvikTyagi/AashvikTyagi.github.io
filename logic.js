@@ -1,14 +1,14 @@
 const today = new Date()
 const month = today.getMonth(), date = today.getDate();
 const wish =
-month==0 && day==1 ? "hny" :
-month==1 && day==7 ? "e" :
-month==2 && day==14 ? "π" :
-month==3 && day==25 ? "🍰" :
-(month==5 || month==11) && day==21 ? "🔥❄️" :
-month==9 && day==23 ? "mol" :
-month==9 && day==25 ? "🎃" :
-month==11 && day==25 ? "🎄" :
+month==0 && date==1 ? "hny" :
+month==1 && date==7 ? "e" :
+month==2 && date==14 ? "π" :
+month==3 && date==25 ? "🍰" :
+(month==5 || month==11) && date==21 ? "🔥❄️" :
+month==9 && date==23 ? "mol" :
+month==9 && date==25 ? "🎃" :
+month==11 && date==25 ? "🎄" :
 "¯\\_(ツ)_/¯";
 
 document.head.insertAdjacentHTML('afterbegin',`
