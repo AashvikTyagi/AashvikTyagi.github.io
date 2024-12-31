@@ -8,17 +8,18 @@ document.head.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
-<div class="header">
+<div class="header" id="top">
     <a style="font-weight: 800; text-decoration: none;" href="/">AashvikT</a> :
-    <a href="#about">about</a> /
-    <a href="#projects">projects</a> /
-    <a href="#todo">todo</a>
+    <a href="/#about">about</a> /
+    <a href="/#projects">projects</a> /
+    <a href="/#todo">todo</a> /
+    <a href="#foot">contact</a>
 </div>
 `);
 
 document.body.insertAdjacentHTML('beforeend',`
 <br>
-<footer>
+<footer id="foot">
     © 2024 AshT. All rights burgled by raccoons.
     <label for="color-dd">[palette: </label>
     <select id="color-dd" onchange="changePalette()">
@@ -41,7 +42,9 @@ document.body.insertAdjacentHTML('beforeend',`
     <a href="https://stackoverflow.com/users/17048834/aashvikt">so</a> /
     <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a> /
     <a href="https://www.reddit.com/user/aashviktyagi">red</a> /
-    <a href="http://discordapp.com/users/aashvikt">disc</a>
+    <a href="http://discordapp.com/users/aashvikt">disc</a>.
+    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">source code</a>.
+    <a href="#top">go to top</a>.
 </footer>
 `);
 
