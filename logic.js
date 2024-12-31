@@ -1,3 +1,16 @@
+const today = new Date()
+const md = [today.getMonth(), today.getDate()];
+const wish =
+md in[[0,1]] ? "hny" :
+md in[[1,7]] ? "e" :
+md in[[2,14]] ? "π" :
+md in[[3,25]] ? "🍰" :
+md[0] in [5,11] && md[1]==21 ? "🔥❄️" :
+md in[[9,23]] ? "mol" :
+md in[[9,25]] ? "🎃" :
+md in[[11,25]] ? "🎄" :
+"¯\_(ツ)_/¯";
+
 document.head.insertAdjacentHTML('afterbegin',`
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +26,7 @@ document.body.insertAdjacentHTML('afterbegin',`
     <a href="/#about">about</a> /
     <a href="/#projects">projects</a> /
     <a href="/#todo">todo</a> /
-    <a href="#foot">contact</a>
+    <a href="#foot">contact</a> / ${wish}
 </div>
 `);
 
@@ -21,7 +34,8 @@ document.body.insertAdjacentHTML('beforeend',`
 <br>
 <footer id="foot">
     © 2024 AshT. All rights burgled by raccoons.
-    <label for="color-dd">[palette: </label>
+    <label for="color-dd">
+    [palette: </label>
     <select id="color-dd" onchange="changePalette()">
         <option>pulpe</option> <!--purple/green-->
         <option>b/o/w</option> <!--black on white-->
@@ -64,8 +78,8 @@ const colorPalettes = [
     ["#1d2021","#fbf1c7","#458588","#b8bb26"],
 ]
 
-const colors = ['--bck-color','--txt-color','--hgl-color','--link-color']
+const colors = ['--bck-color', '--txt-color', '--hgl-color', '--link-color']
 function changePalette(){
     palette = colorPalettes[document.querySelector('#color-dd').selectedIndex];
-    for (let i=0;i<colorPalettes[0].length;i++) document.body.style.setProperty(colors[i],palette[i]);
+    for (let i=0; i<colorPalettes[0].length; i++) document.body.style.setProperty(colors[i], palette[i]);
 }
