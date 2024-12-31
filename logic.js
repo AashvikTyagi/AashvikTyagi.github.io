@@ -1,15 +1,15 @@
 const today = new Date()
-const md = [today.getMonth(), today.getDate()];
+const month = today.getMonth(), date = today.getDate();
 const wish =
-md in[[0,1]] ? "hny" :
-md in[[1,7]] ? "e" :
-md in[[2,14]] ? "π" :
-md in[[3,25]] ? "🍰" :
-md[0] in [5,11] && md[1]==21 ? "🔥❄️" :
-md in[[9,23]] ? "mol" :
-md in[[9,25]] ? "🎃" :
-md in[[11,25]] ? "🎄" :
-"¯\_(ツ)_/¯";
+month==0 && day==1 ? "hny" :
+month==1 && day==7 ? "e" :
+month==2 && day==14 ? "π" :
+month==3 && day==25 ? "🍰" :
+(month==5 || month==11) && day==21 ? "🔥❄️" :
+month==9 && day==23 ? "mol" :
+month==9 && day==25 ? "🎃" :
+month==11 && day==25 ? "🎄" :
+"¯\\_(ツ)_/¯";
 
 document.head.insertAdjacentHTML('afterbegin',`
 <meta charset="UTF-8">
