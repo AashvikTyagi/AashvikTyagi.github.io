@@ -1,8 +1,8 @@
 :root {
-    --bck-color: #000000;
-    --txt-color: #ffffff;
-    --hgl-color: #5478b8;
-    --link-color: #dfe5f2;
+    --bck-color: #1d2021;
+    --txt-color: #fbf1c7;
+    --hgl-color: #458588;
+    --link-color: #b8bb26;
     font-family: Inter, sans-serif;
 }
 body {

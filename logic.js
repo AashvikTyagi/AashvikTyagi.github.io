@@ -17,13 +17,14 @@ document.body.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('beforeend',`
+<br>
 <footer>
     © 2024 AshT. All rights burgled by raccoons.
     <label for="color-dd">[palette: </label>
     <select id="color-dd" onchange="changePalette()">
         <option>pulpe</option> <!--purple/green-->
         <option>b/o/w</option> <!--black on white-->
-        <option selected='selected'>w/o/b</option> <!--white on black-->
+        <option>w/o/b</option> <!--white on black-->
         <option>clbd1</option> <!--colorblind-friendly 1-->
         <option>clbd2</option> <!--colorblind-friendly 2-->
         <option>bnshk</option> <!--banana shake-->
@@ -33,7 +34,7 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>invyc</option> <!--dark hacker news-->
         <option>hcknw</option> <!--hacker news-->
         <option>lspcl</option> <!--la speciale-->
-        <option>gruvb</option> <!--gruvbox dark-->
+        <option selected='selected'>gruvb</option> <!--gruvbox dark-->
     </select>].
     <a href="https://www.youtube.com/@AashvikT">yt</a> /
     <a href="https://github.com/AashvikTyagi">gh</a> /
