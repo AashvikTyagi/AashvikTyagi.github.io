@@ -41,6 +41,7 @@ document.body.insertAdjacentHTML('beforeend',`
 <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">
     <img src="https://badgen.net/static/w3c/xhtml✓" alt="w3c xhtml✓">
 </a>
+&emsp;
 <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">
     <img src="https://badgen.net/static/w3c/css✓" alt="w3c css✓">
 </a>
