@@ -19,9 +19,9 @@ a:hover {
     color: var(--bck-color);
     background: var(--txt-color);
 }
-div.header, footer {background-color: var(--hgl-color)}
-div.header a, footer a {color: var(--txt-color)}
-div.header a:hover, footer a:hover {
+div.bar, footer {background-color: var(--hgl-color)}
+div.bar a, footer a {color: var(--txt-color)}
+div.bar a:hover, footer a:hover {
     font-size: inherit;
     color: var(--hgl-color);
     background-color: var(--txt-color);

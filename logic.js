@@ -9,7 +9,7 @@ document.head.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
-<div class="header" id="top">
+<div class="bar" id="top">
     <a style="font-weight: 800; text-decoration: none;" href="/">AashvikT</a> :
     <a href="/#about">about</a> /
     <a href="/#projects">projects</a> /
