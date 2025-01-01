@@ -35,8 +35,17 @@ document.body.insertAdjacentHTML('beforeend',`
 <br>
 <footer id="foot">
     © 2024 AshT. All rights burgled by raccoons.
+    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
+    is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
+    content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
+    <a href="https://www.youtube.com/@AashvikT">yt</a> /
+    <a href="https://github.com/AashvikTyagi">gh</a> /
+    <a href="https://stackoverflow.com/users/17048834/aashvikt">so</a> /
+    <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a> /
+    <a href="https://www.reddit.com/user/aashviktyagi">red</a> /
+    <a href="http://discordapp.com/users/aashvikt">disc</a>.
     <label for="color-dd">
-    [palette: </label>
+    palette: </label>
     <select id="color-dd" onchange="changePalette()">
         <option>pulpe</option> <!--purple/green-->
         <option>b/o/w</option> <!--black on white-->
@@ -50,15 +59,8 @@ document.body.insertAdjacentHTML('beforeend',`
         <option>invyc</option> <!--dark hacker news-->
         <option>hcknw</option> <!--hacker news-->
         <option>lspcl</option> <!--la speciale-->
-        <option selected='selected'>gruvb</option> <!--gruvbox dark-->
-    </select>].
-    <a href="https://www.youtube.com/@AashvikT">yt</a> /
-    <a href="https://github.com/AashvikTyagi">gh</a> /
-    <a href="https://stackoverflow.com/users/17048834/aashvikt">so</a> /
-    <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a> /
-    <a href="https://www.reddit.com/user/aashviktyagi">red</a> /
-    <a href="http://discordapp.com/users/aashvikt">disc</a>.
-    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">source code</a>.
+        <option selected="selected">gruvb</option> <!--gruvbox dark-->
+    </select>.
     <a href="#top">go to top</a>.
 </footer>
 `);
