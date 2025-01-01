@@ -13,8 +13,7 @@ document.body.insertAdjacentHTML('afterbegin',`
     <a style="font-weight: 800; text-decoration: none;" href="/">AashvikT</a> :
     <a href="/#about">about</a> /
     <a href="/#projects">projects</a> /
-    <a href="/#todo">todo</a> /
-    <a href="#foot">contact</a> / ${
+    <a href="/#todo">todo</a> / ${
         month==0 && date==1 ? "hny" :
         month==1 && date==7 ? "e" :
         month==1 && date==13 ? "📻" :
@@ -27,22 +26,29 @@ document.body.insertAdjacentHTML('afterbegin',`
         month==9 && date==25 ? "🎃" :
         month==11 && date==25 ? "🎄" :
         "¯\\_(ツ)_/¯"}
-</div>
-`);
-
-document.body.insertAdjacentHTML('beforeend',`
-<br>
-<footer id="foot">
-    © 2024 AshT. All rights burgled by raccoons.
-    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
-    is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
-    content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
+    &emsp;
     <a href="https://www.youtube.com/@AashvikT">yt</a> /
     <a href="https://github.com/AashvikTyagi">gh</a> /
     <a href="https://stackoverflow.com/users/17048834/aashvikt">so</a> /
     <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a> /
     <a href="https://www.reddit.com/user/aashviktyagi">red</a> /
     <a href="http://discordapp.com/users/aashvikt">disc</a>.
+</div>
+`);
+
+document.body.insertAdjacentHTML('beforeend',`
+<br>
+<a href="https://validator.w3.org/nu/?doc=https://aashvik.com">
+    <img src="https://badgen.net/static/w3c/xhtml✓" alt="w3c xhtml✓">
+</a>
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">
+    <img src="https://badgen.net/static/w3c/css✓" alt="w3c css✓">
+</a>
+<footer id="foot">
+    © 2024 AshT. All rights burgled by raccoons.
+    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
+    is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
+    content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
     <label for="color-dd">
     palette: </label>
     <select id="color-dd" onchange="changePalette()">
