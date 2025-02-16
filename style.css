@@ -1,28 +1,29 @@
 :root {
-    --bck-color: #1d2021;
-    --txt-color: #fbf1c7;
-    --hgl-color: #458588;
-    --link-color: #b8bb26;
-    font-family: Verdana, sans-serif;
+    --bg: #000;
+    --fg: #fff;
+    --hl: #2596be;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fff;
+    --fg: #000;
+  }
 }
 body {
+    font-family: Verdana, sans-serif;
     font-size: 85%;
-    color: var(--txt-color);
-    background-color: var(--bck-color);
+    color: var(--fg);
+    background-color: var(--bg);
 }
-a {color: var(--link-color)}
-a:hover {
-    font-size: x-large;
-    background-color: var(--hgl-color);
-}
+a {color: var(--hl)}
+a:hover {background-color: var(--fg)}
 ::selection {
-    color: var(--bck-color);
-    background: var(--txt-color);
+    color: var(--bg);
+    background: var(--fg);
 }
-div.bar, footer {background-color: var(--hgl-color)}
-div.bar a, footer a {color: var(--txt-color)}
+div.bar, footer {background-color: var(--hl)}
+div.bar a, footer a {color: var(--fg)}
 div.bar a:hover, footer a:hover {
-    font-size: inherit;
-    color: var(--hgl-color);
-    background-color: var(--txt-color);
+    color: var(--hl);
+    background-color: var(--fg);
 }
