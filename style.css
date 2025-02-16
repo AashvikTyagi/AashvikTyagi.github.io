@@ -4,10 +4,8 @@
     --hl: #2596be;
 }
 @media (prefers-color-scheme: light) {
-  :root {
     --bg: #fff;
     --fg: #000;
-  }
 }
 body {
     font-family: Verdana, sans-serif;
