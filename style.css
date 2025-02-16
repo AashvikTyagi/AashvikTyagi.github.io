@@ -3,10 +3,10 @@
     --txt-color: #fbf1c7;
     --hgl-color: #458588;
     --link-color: #b8bb26;
-    font-family: Inter, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 body {
-    font-size: 90%;
+    font-size: 85%;
     color: var(--txt-color);
     background-color: var(--bck-color);
 }
