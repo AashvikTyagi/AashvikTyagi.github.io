@@ -51,45 +51,6 @@ document.body.insertAdjacentHTML('beforeend',`
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
     content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
-    <label for="color-dd">
-    palette: </label>
-    <select id="color-dd" onchange="changePalette()">
-        <option>pulpe</option> <!--purple/green-->
-        <option>b/o/w</option> <!--black on white-->
-        <option>w/o/b</option> <!--white on black-->
-        <option>clbd1</option> <!--colorblind-friendly 1-->
-        <option>clbd2</option> <!--colorblind-friendly 2-->
-        <option>bnshk</option> <!--banana shake-->
-        <option>mnion</option> <!--minion-->
-        <option>tensy</option> <!--teensy 4.1 green-->
-        <option>minty</option> <!--grey mint green-->
-        <option>invyc</option> <!--dark hacker news-->
-        <option>hcknw</option> <!--hacker news-->
-        <option>lspcl</option> <!--la speciale-->
-        <option selected="selected">gruvb</option> <!--gruvbox dark-->
-    </select>.
     <a href="#top">go to top</a>.
 </footer>
 `);
-
-const colorPalettes = [
-    ["#52307c","#00ff80","#8a2be2","#e0c6f7"],
-    ["#ffffff","#000000","#5478b8","#292929"],
-    ["#000000","#ffffff","#5478b8","#dfe5f2"],
-    ["#ffffff","#000000","#ffa500","#525252"],
-    ["#f2f2f2","#333333","#ffd700","#5a5a5a"],
-    ["#f2dfbb","#d9984a","#f2f2f2","#e3b47b"],
-    ["#202020","#f6f6ef","#ffcd00","#828282"],
-    ["#202020","#f6f6ef","#6acf65","#ffffff"],
-    ["#ffffff","#202020","#28d28c","#292929"],
-    ["#202020","#f6f6ef","#ff6600","#ffffff"],
-    ["#f6f6ef","#202020","#ff6600","#1c1d1f"],
-    ["#070707","#00a9a6","#fbf1c7","#de423e"],
-    ["#1d2021","#fbf1c7","#458588","#b8bb26"],
-]
-
-const colors = ['--bck-color', '--txt-color', '--hgl-color', '--link-color']
-function changePalette(){
-    palette = colorPalettes[document.querySelector('#color-dd').selectedIndex];
-    for (let i=0; i<colorPalettes[0].length; i++) document.body.style.setProperty(colors[i], palette[i]);
-}
