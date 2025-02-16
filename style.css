@@ -15,11 +15,14 @@ body {
     color: var(--fg);
     background-color: var(--bg);
 }
-a {color: var(--hl)}
-a:hover {background-color: var(--fg)}
 ::selection {
     color: var(--bg);
     background: var(--fg);
+}
+a {color: var(--hl)}
+a:hover {
+    color: var(--fg);
+    background-color: var(--hl);
 }
 div.bar, footer {background-color: var(--hl)}
 div.bar a, footer a {color: var(--fg)}
