@@ -39,11 +39,11 @@ document.body.insertAdjacentHTML('afterbegin',`
 
 document.body.insertAdjacentHTML('beforeend',`
 <br>
-<a href="https://validator.w3.org/nu/?doc=https://aashvik.com">
+<a style="text-decoration:none" href="https://validator.w3.org/nu/?doc=https://aashvik.com">
     <img src="https://badgen.net/static/w3c/xhtml✓" alt="w3c xhtml✓">
 </a>
 &ensp;
-<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">
+<a style="text-decoration:none" href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">
     <img src="https://badgen.net/static/w3c/css✓" alt="w3c css✓">
 </a>
 <footer id="foot">
@@ -51,6 +51,6 @@ document.body.insertAdjacentHTML('beforeend',`
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
     content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
-    <a href="#top">go to top</a>.
+    <a href="#top">Go to top</a>.
 </footer>
 `);
