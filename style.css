@@ -1,17 +1,18 @@
 :root {
-    --bg: #000;
+    --bg: #0c0c0c;
     --fg: #fff;
     --hl: #2596be;
 }
 @media (prefers-color-scheme: light) {
     :root {
-        --bg: #fff;
-        --fg: #000;
+        --bg: #fefefe;
+        --fg: #333333;
     }
 }
 body {
-    font-family: Verdana, sans-serif;
-    font-size: 85%;
+    font-family: verdana, sans-serif;
+	font-size: 80%;
+    line-height: 1.25em;
     color: var(--fg);
     background-color: var(--bg);
 }
