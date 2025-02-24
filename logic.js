@@ -46,6 +46,10 @@ document.body.insertAdjacentHTML('beforeend',`
 <a style="text-decoration:none" href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">
     <img src="https://badgen.net/static/w3c/css✓" alt="w3c css✓">
 </a>
+&ensp;
+<a style="text-decoration:none" href="https://250kb.club/aashvik-com">
+    <img src="https://badgen.net/static/250kb/club✓" alt="250kb club member">
+</a>
 <footer id="foot">
     © 2024 AshT. All rights burgled by raccoons.
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
