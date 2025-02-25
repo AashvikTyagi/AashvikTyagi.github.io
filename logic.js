@@ -9,7 +9,8 @@ document.head.insertAdjacentHTML('afterbegin',`
 
 document.body.insertAdjacentHTML('afterbegin',`
 <div class="bar" id="top">
-    <a class="strong" href="/">AashvikT</a> :
+    <a class="strong" href="/">AashvikT</a>
+    &ensp;
     <a href="/#about">about</a> /
     <a href="/#projects">projects</a> /
     <a href="/#todo">todo</a>
@@ -48,7 +49,7 @@ document.body.insertAdjacentHTML('beforeend',`
 </a>
 &ensp;
 <a style="text-decoration:none" href="https://250kb.club/aashvik-com">
-    <img src="https://badgen.net/static/250kb/club✓" alt="250kb club member">
+    <img src="https://badgen.net/static/250kb/club" alt="250kb club member">
 </a>
 <footer id="foot">
     © 2024 AshT. All rights burgled by raccoons.
