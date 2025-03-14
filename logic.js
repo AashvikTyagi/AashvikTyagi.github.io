@@ -1,4 +1,4 @@
-const today = new Date(), month = today.getMonth(), date = today.getDate();
+const today = new Date(), m = today.getMonth(), d = today.getDate();
 
 document.head.insertAdjacentHTML('afterbegin',`
 <meta charset="UTF-8">
@@ -11,28 +11,30 @@ document.body.insertAdjacentHTML('afterbegin',`
 <div class="bar" id="top">
     <a class="strong" href="/">AashvikT</a>&ensp;
     ${
-        month==0 && date==1 ? "hny" :
-        month==1 && date==7 ? "e" :
-        month==1 && date==13 ? "📻" :
-        month==2 && date==14 ? "π" :
-        month==3 && date==25 ? "🍰" :
-        month==3 && date==26 ? "👽" :
-        (month==5 || month==11) && date==21 ? "🔥❄️" :
-        month==8 && date==26 ? "🤖" :
-        month==9 && date==23 ? "mol" :
-        month==9 && date==25 ? "🎃" :
-        month==11 && date==25 ? "🎄" :
-        "¯\\_(ツ)_/¯"}
+        m==0 && d==1 ? "hny" :
+        m==1 && d==7 ? "e" :
+        m==1 && d==13 ? "📻" :
+        m==2 && d==14 ? "π" :
+        m==3 && d==25 ? "🍰" :
+        m==3 && d==26 ? "👽" :
+        (m==5 || d==11) && date==21 ? "🔥❄️" :
+        m==8 && d==26 ? "🤖" :
+        m==9 && d==23 ? "mol" :
+        m==9 && d==25 ? "🎃" :
+        m==11 && d==25 ? "🎄" :
+        "¯\\_(ツ)_/¯"
+    }
 </div>
 <br>
 `);
 
 document.body.insertAdjacentHTML('beforeend',`
 <br>
-<a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
-<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
-<a href="https://250kb.club/aashvik-com">250kb club member</a>
 <div class="bar">
+    <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
+    <a href="https://250kb.club/aashvik-com">250kb club member</a>
+    <br>
     © 2024 AshT. All rights burgled by raccoons.
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
