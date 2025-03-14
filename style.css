@@ -6,5 +6,5 @@ body {
 }
 a.strong {font-weight: bold}
 div.bar a {color: #333333}
-a:hover {color: goldenrod;}
+a:hover, div.bar a:hover  {color: goldenrod}
 code {background-color: lightblue}
