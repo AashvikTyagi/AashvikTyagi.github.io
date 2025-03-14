@@ -1,37 +1,10 @@
-:root {
-    --bg: #0c0c0c;
-    --fg: #fff;
-    --hl: DeepSkyBlue;
-}
-@media (prefers-color-scheme: light) {
-    :root {
-        --bg: #fefefe;
-        --fg: #333333;
-    }
-}
 body {
-    font-family: verdana, sans-serif;
-	font-size: 80%;
-    line-height: 1.25em;
-    color: var(--fg);
-    background-color: var(--bg);
+    font-family: helvetica neue, arial, sans-serif;
+    line-height: 1.5em;
+    color: #333333;
+    background-color: whitesmoke;
 }
-::selection {
-    color: var(--bg);
-    background: var(--fg);
-}
-a {color: var(--hl)}
-a:hover {
-    color: var(--fg);
-    background-color: var(--hl);
-}
-a.strong {
-    font-weight: bold;
-    text-decoration: none;
-}
-div.bar, footer {background-color: var(--hl)}
-div.bar a, footer a {color: var(--fg)}
-div.bar a:hover, footer a:hover {
-    color: var(--hl);
-    background-color: var(--fg);
-}
+a.strong {font-weight: bold}
+div.bar a {color: #333333}
+a:hover {color: goldenrod;}
+code {background-color: lightblue}
