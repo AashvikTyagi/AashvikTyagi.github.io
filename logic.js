@@ -28,6 +28,7 @@ document.body.insertAdjacentHTML('afterbegin',`
 `);
 
 document.body.insertAdjacentHTML('beforeend',`
+<br>
 <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
 <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
 <a href="https://250kb.club/aashvik-com">250kb club member</a>
