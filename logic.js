@@ -9,18 +9,7 @@ document.head.insertAdjacentHTML('afterbegin',`
 
 document.body.insertAdjacentHTML('afterbegin',`
 <div class="bar" id="top">
-    <a class="strong" href="/">AashvikT</a>
-    &ensp;
-    <a href="/#about">about</a> /
-    <a href="/#projects">projects</a> /
-    <a href="/#todo">todo</a>
-    &ensp;
-    <a href="https://github.com/AashvikTyagi">gh</a> /
-    <a href="https://stackoverflow.com/users/17048834/aashvikt">so</a> /
-    <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a> /
-    <a href="https://www.reddit.com/user/aashviktyagi">red</a> /
-    <a href="https://discord.com/users/828870867424378921">disc</a>
-    &ensp;
+    <a class="strong" href="/">AashvikT</a>&ensp;
     ${
         month==0 && date==1 ? "hny" :
         month==1 && date==7 ? "e" :
@@ -35,26 +24,18 @@ document.body.insertAdjacentHTML('afterbegin',`
         month==11 && date==25 ? "🎄" :
         "¯\\_(ツ)_/¯"}
 </div>
+<br>
 `);
 
 document.body.insertAdjacentHTML('beforeend',`
-<br>
-<a style="text-decoration:none" href="https://validator.w3.org/nu/?doc=https://aashvik.com">
-    <img src="https://badgen.net/static/w3c/xhtml✓" alt="w3c xhtml✓">
-</a>
-&ensp;
-<a style="text-decoration:none" href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">
-    <img src="https://badgen.net/static/w3c/css✓" alt="w3c css✓">
-</a>
-&ensp;
-<a style="text-decoration:none" href="https://250kb.club/aashvik-com">
-    <img src="https://badgen.net/static/250kb/club" alt="250kb club member">
-</a>
-<footer id="foot">
+<a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
+<a href="https://250kb.club/aashvik-com">250kb club member</a>
+<div class="bar">
     © 2024 AshT. All rights burgled by raccoons.
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
     content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
     <a href="#top">Go to top</a>.
-</footer>
+</div>
 `);
