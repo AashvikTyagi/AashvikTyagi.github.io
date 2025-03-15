@@ -42,7 +42,7 @@ document.body.insertAdjacentHTML('beforeend',`
 <div class="bar">
     <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
-    <a href="https://250kb.club/aashvik-com">250kb club member</a>
+    <a href="https://250kb.club/aashvik-com">250kb.club</a>
     <br>
     git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) /
     <a href="https://discord.com/users/828870867424378921">discord</a> /
