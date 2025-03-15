@@ -5,15 +5,15 @@ document.head.insertAdjacentHTML('afterbegin',`
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="/favicon.png">
 <style>
-    body {
-        font-family: helvetica neue, arial, sans-serif;
-        line-height: 1.5em;
-        background-color: whitesmoke;
-    }
-    body, div.bar a {color: #333333}
-    a:hover, div.bar a:hover {color: goldenrod}
-    a.strong {font-weight: bold}
-    code {background-color: lightblue}
+body {
+    font-family: helvetica neue, arial, sans-serif;
+    line-height: 1.5em;
+    background-color: whitesmoke;
+}
+body, div.bar a {color: #333333}
+a:hover, div.bar a:hover {color: goldenrod}
+a.strong {font-weight: bold}
+code {background-color: lightblue}
 </style>
 `);
 
@@ -21,18 +21,20 @@ document.body.insertAdjacentHTML('afterbegin',`
 <div class="bar" id="top">
     <a class="strong" href="/">AashvikT</a>&ensp;
     ${
-        m==0 && d==1 ? "hny" :
-        m==1 && d==7 ? "e" :
-        m==1 && d==13 ? "📻" :
-        m==2 && d==14 ? "π" :
-        m==3 && d==25 ? "🍰" :
-        m==3 && d==26 ? "👽" :
-        (m==5 || d==11) && date==21 ? "🔥❄️" :
-        m==8 && d==26 ? "🤖" :
-        m==9 && d==23 ? "mol" :
-        m==9 && d==25 ? "🎃" :
-        m==11 && d==25 ? "🎄" :
-        "¯\\_(ツ)_/¯"
+        Map([
+            [[0, 1], "hny"],
+            [[1, 7], "e"], 
+            [[1, 13], "📻"],
+            [[2, 14], "π"],
+            [[3, 25], "🍰"],
+            [[3, 26], "👽"],
+            [[5, 21], "🔥❄️"],
+            [[11, 21], "🔥❄️"],
+            [[8, 26], "🤖"],
+            [[9, 23], "mol"],
+            [[9, 25], "🎃"],
+            [[11, 25], "🎄"],
+        ]).get([m, d].toString() || "¯\\_(ツ)_/¯"
     }
 </div>
 <br>
