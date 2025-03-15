@@ -4,7 +4,17 @@ document.head.insertAdjacentHTML('afterbegin',`
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="stylesheet" href="/style.css">
+<style>
+    body {
+        font-family: helvetica neue, arial, sans-serif;
+        line-height: 1.5em;
+        background-color: whitesmoke;
+    }
+    body, div.bar a {color: #333333}
+    a:hover, div.bar a:hover {color: goldenrod}
+    a.strong {font-weight: bold}
+    code {background-color: lightblue}
+</style>
 `);
 
 document.body.insertAdjacentHTML('afterbegin',`
