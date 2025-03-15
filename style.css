@@ -1,10 +1,9 @@
 body {
     font-family: helvetica neue, arial, sans-serif;
     line-height: 1.5em;
-    color: #333333;
     background-color: whitesmoke;
 }
+body, div.bar a {color: #333333}
+a:hover, div.bar a:hover {color: goldenrod}
 a.strong {font-weight: bold}
-div.bar a {color: #333333}
-a:hover, div.bar a:hover  {color: goldenrod}
 code {background-color: lightblue}
