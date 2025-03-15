@@ -29,6 +29,11 @@
             const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
             const data = await response.json();
             console.log(data);
+            const titles = data.filter(item => item.type === 'dir').map(folder => {
+                const [date, ...titleParts] = folder.name.split(' ');
+                return {date, title: titleParts.join(' ').replace(/_/g, ' ')};
+            });
+            console.log(titles);
         }
         showTitles();
         // uses marked.min.js by Christopher Jeffrey (https://github.com/markedjs/marked)
