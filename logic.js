@@ -3,7 +3,7 @@ const today = new Date(), m = today.getMonth(), d = today.getDate();
 document.head.insertAdjacentHTML('afterbegin',`
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width>
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" href="/favicon.png">
 <style>
 body {
     font-family: helvetica neue, arial, sans-serif;
