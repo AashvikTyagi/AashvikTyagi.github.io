@@ -7,7 +7,6 @@ document.head.insertAdjacentHTML('afterbegin',`
 <style>
 body {
     font-family: helvetica neue, arial, sans-serif;
-    line-height: 1.5em;
     background-color: whitesmoke;
 }
 body, div.bar a {color: #333333}
