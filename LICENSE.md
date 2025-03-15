@@ -1,6 +1,6 @@
 Copyright (c) 2025 Aashvik Tyagi
 
-The content (text, other media) of this website is [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
+The content (text, other media) of this website is [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 The source code is under the MIT License:
 
