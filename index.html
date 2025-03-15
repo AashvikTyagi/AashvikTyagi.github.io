@@ -3,9 +3,6 @@
 <head>
     <title>aashvik</title>
     <script src="/marked.min.js"></script>
-    <script>
-        document.getElementById('content').innerHTML = marked.parse('# Trying something out right now, this second. Try later.'.replace(/^[\u200B\u200C\u200D\u200E\u200F\uFEFF]/,""));
-    </script
 </head>
 <body>
     <div id="content"></div>
@@ -29,5 +26,8 @@
         <li>many, many more undocumented creations and tinkerings</li>
     </ul>
     <script src="/logic.js"></script>
+    <script>
+        document.getElementById('content').innerHTML = marked.parse('# Trying something out right now, this second. Try later.'.replace(/^[\u200B\u200C\u200D\u200E\u200F\uFEFF]/,""));
+    </script
 </body>
 </html>
