@@ -39,6 +39,5 @@ document.body.insertAdjacentHTML('beforeend',`
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
     content is <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>.
-    <a href="#top">Go to top</a>.
 </div>
 `);
