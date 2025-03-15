@@ -35,6 +35,10 @@ document.body.insertAdjacentHTML('beforeend',`
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
     <a href="https://250kb.club/aashvik-com">250kb club member</a>
     <br>
+    git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) /
+    <a href="https://discord.com/users/828870867424378921">discord</a> /
+    <a href="mailto:its.aashvik.tyagi@gmail.com">its.aashvik.tyagi (at) gmail.com</a>
+    <br>
     © 2024 AshT. All rights burgled by raccoons.
     <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
