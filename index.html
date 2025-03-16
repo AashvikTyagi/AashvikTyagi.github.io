@@ -69,7 +69,7 @@
             let content;
             if (window.location.hash) {
                 title = window.location.hash.substring(1);
-                fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`)
+                fetch(`https://api.github.com/repos/AashvikTyagi/writing/contents/${title}/src.md`)
                     .then(response => response.text())
                     .then(md => {content = md;})
                     .catch(error => {
