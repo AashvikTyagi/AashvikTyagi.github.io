@@ -68,6 +68,7 @@
         function updateContent() {
             let content;
             if (window.location.hash) {
+                alert("i see hash?");
                 title = window.location.hash.substring(1);
                 fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`)
                     .then(response => response.text())
