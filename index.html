@@ -30,8 +30,8 @@
             const data = await response.json();
             console.log(data);
             const titles = data.filter(item => item.type === 'dir').map(folder => {
-                const [date, ...titleParts] = folder.name.split(' ');
-                return {date, title: titleParts.join(' ').replace(/_/g, ' ')};
+                const [date, title] = folder.name.split('_');
+                return {date, title};
             });
             console.log(titles);
         }
