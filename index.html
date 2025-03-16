@@ -70,7 +70,7 @@
             if (window.location.hash) {
                 title = window.location.hash.substring(1);
                 fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`).then(response => response.text()).then(md => {content = md;});
-                document.title = `AshT: ${title}`;
+                document.title = `AshT: ${title.replace(/_/g, ' ')}`;
             }
             else {
                 content = '';
