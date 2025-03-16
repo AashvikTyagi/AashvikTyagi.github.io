@@ -65,21 +65,18 @@
             });
             document.getElementById('content').appendChild(writingList);
         }
-        async function getMD(title) {
-          const response = await fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`);
-          if (!response.ok) console.log("couldn't get the md");
-          else return await response.text();
-        }
         function updateContent() {
             let content;
             if (window.location.hash) {
                 title = window.location.hash.substring(1);
-                // content = getMD(title);
-                content = 'hash';
+                const response = await fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`);
+                const md = await response.text();
+                alert(md);
+                content = md;
                 document.title = title.replace(/_/g, ' ');
             }
             else {
-                content = 'nohash';
+                content = '';
                 listPages();
                 document.title = 'aashvik';
             }
