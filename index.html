@@ -74,7 +74,8 @@
             let content;
             if (window.location.hash) {
                 title = window.location.hash.substring(1);
-                content = getMD(title);
+                // content = getMD(title);
+                content = 'hash';
                 document.title = title.replace(/_/g, ' ');
             }
             else {
