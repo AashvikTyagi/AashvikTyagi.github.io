@@ -51,9 +51,9 @@
         async function showTitles() {
             const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
             const data = await response.json();
-            const titles = data.filter(item => item.type === 'dir').map(folder => folder.name.split('_'));
-            return titles;
+            console.log(titles);
         }
+        showTitles();
         function updateContent() {
             content = !window.location.hash ? "# Currently turning everything into webpages generated dynamically from markdown, be careful lol" : window.location.hash.substring(1);
             // uses marked.min.js (https://github.com/markedjs/marked) by Christopher Jeffrey under MIT License
