@@ -11,29 +11,26 @@
             background-color: whitesmoke;
             margin: 5%;
         }
-        body, div.bar a {color: #333333}
-        a:hover, div.bar a:hover {color: goldenrod}
-        a.strong {font-weight: bold}
+        body, a {color: #333333}
+        a:hover {color: goldenrod}
         code {background-color: lightblue}
     </style>
 </head>
 <body>
-    <div class="bar"><a class="strong" href="/">AashvikT</a>&ensp;<span id="greet"></span></div>
+    <strong><a href="/">AashvikT</a></strong>&ensp;<span id="greet"></span>
     <br><div id="content"></div><br>
-    <div class="bar">
-        <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
-        <a href="https://250kb.club/aashvik-com">250kb.club</a>
-        <br>
-        git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) /
-        <a href="https://discord.com/users/828870867424378921">discord</a> /
-        <a href="mailto:its.aashvik.tyagi@gmail.com">its.aashvik.tyagi (at) gmail.com</a>
-        <br>
-        © 2024 AshT. All rights burgled by raccoons.
-        <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
-        is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
-        <a href="https://github.com/AashvikTyagi/writing">content</a> is <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA</a>.
-    </div>
+    <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
+    <a href="https://250kb.club/aashvik-com">250kb.club</a>
+    <br>
+    git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) /
+    <a href="https://discord.com/users/828870867424378921">discord</a> /
+    <a href="mailto:its.aashvik.tyagi@gmail.com">its.aashvik.tyagi (at) gmail.com</a>
+    <br>
+    © 2024 AshT. All rights burgled by raccoons.
+    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
+    is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
+    <a href="https://github.com/AashvikTyagi/writing">content</a> is <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA</a>.
     <script>
         const today = new Date(), m = today.getMonth(), d = today.getDate();
         document.getElementById('greet').innerHTML = m==1 && d==7 ? "e" :
@@ -52,10 +49,11 @@
         async function updateContent() {
             if (window.location.hash) {
                 const title = window.location.hash.substring(1);
-                const response = await fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`);
+                const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`;
+                const response = await fetch(url);
                 const md = await response.text();
                 const top = document.title = title.replace(/_/g, ' ');
-                document.getElementById('content').innerHTML = `<div class="bar"><a class="strong" href="/#${title}">${top}</a></div>` + marked.parse(md);
+                document.getElementById('content').innerHTML = `<a href="/#${title}">${top}</a> / <a href=${url}>src.md</a>` + marked.parse(md);
             } else {
                 document.title = 'aashvik';
                 const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
