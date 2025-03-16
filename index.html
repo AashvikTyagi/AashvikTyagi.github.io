@@ -75,7 +75,7 @@
                     .catch(error => {
                         console.error('sad error: ', error);
                     });
-                document.title = `AshT: ${title.replace(/_/g, ' ')}`;
+                document.title = title.replace(/_/g, ' ');
             }
             else {
                 content = '';
