@@ -49,15 +49,15 @@
         async function updateContent() {
             if (window.location.hash) {
                 const title = window.location.hash.substring(1);
-                const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/src.md`;
-                const response = await fetch(url);
+                const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}`;
+                const response = await fetch(url+"/src.md");
                 const md = await response.text();
                 const top = document.title = title.replace(/_/g, ' ');
                 document.getElementById('content').innerHTML =
-                    `<br><a href="/#${title}">${top}</a> / <a href=${url}>src.md</a><br>`
-                    + marked.parse(md).replace(/!\[([^\]]*)\]\(assets\/([^\)]+)\)/g, (match, altText, assetName) => {
-                        return `![${altText}](https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}/${assetName})`;
-                    });
+                    `<br><a href="/#${title}">${top}</a> / <a href=${url}/src.md>src.md</a><br>`
+                    + marked.parse(md).replace(/!\[([^\]]+)\]\(assets\/([^)]+)\)/g, (match, title, file) => {
+                        return `![${title}](${url}/assets/${file})`;
+                    });;
             } else {
                 document.title = 'aashvik';
                 const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
