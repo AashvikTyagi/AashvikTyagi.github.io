@@ -53,7 +53,7 @@
                 const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}`;
                 const response = await fetch(url+"/src.md");
                 const md = await response.text();
-                const top = document.title = title.replace(/_/g, ' ');
+                const top = document.title = title;
                 document.getElementById('content').innerHTML =
                     `<br><a href="/#${title}">${top}</a> / <a href=${url}/src.md>src.md</a><br>`
                     + marked.parse(md.replace(/!\[([^\]]+)\]\(assets\/([^)]+)\)/g, (match, title, file) => {
@@ -70,7 +70,7 @@
                 titles.forEach(title => {
                     const postLink = document.createElement('a');
                     postLink.href = `/#${title}`;
-                    postLink.textContent = title.replace(/_/g, ' ');
+                    postLink.textContent = title;
                     const li = document.createElement('li');
                     li.appendChild(postLink);
                     ul.appendChild(li);
