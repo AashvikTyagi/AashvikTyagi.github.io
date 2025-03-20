@@ -67,7 +67,7 @@
                         .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
                         .replace(/`([^`]+)`/g, '<code>$1</code>')
                         .replace(/!\[([^\]]*)\]\((assets\/[^\)]+)\)/g, `<img src="${url}/$2" alt="$1">`)
-                        .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, `<img src="$2" alt="$1">`)
+                        .replace(/!\[([^\]]*)\]\((?!assets\/)([^)]+)\)/g, `<img src="$2" alt="$1">`)
                         .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
                         .replace(/([^\n]+)\n/g, '<p>$1</p>');
             } else {
