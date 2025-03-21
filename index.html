@@ -1,1 +1,97 @@
-<!doctypehtml><html lang="en"><title>aashvik</title><meta charset="UTF-8"><meta content="width=device-width,initial-scale=1"name="viewport"><link href="/favicon.png"rel="icon"><style>body{font-family:helvetica neue,arial,sans-serif;background-color:#f5f5f5;margin:5%}a,body{color:#333}a:hover{color:#9932cc}code{background-color:#d3d3d3}img{max-height:50vh;max-width:100%}iframe{max-width:100%}</style><strong><a href="/">AashvikT</a></strong> <span id="greet"></span><br><br><div id="content"></div><br><br><a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>  <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>  <a href="https://250kb.club/aashvik-com">250kb.club</a><br>git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) / <a href="https://discord.com/users/828870867424378921">discord</a> / <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a><br>© 2024 AshT. All rights burgled by raccoons. <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a> is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>, <a href="https://github.com/AashvikTyagi/writing">content</a> is <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA</a>.<script>const today = new Date(), m = today.getMonth(), d = today.getDate();document.getElementById('greet').innerHTML=m==1&&d==7?"e":m==1&&d==13?"📻":m==2&&d==14?"π":m==3&&d==25?"🍰":m==3&&d==26?"👽":(m==5||m==11)&&d==21?"🔥❄️":m==8&&d==26?"🤖":m==9&&d==23?"mol":m==9&&d==25?"🎃":m==11&&d==25?"🎄":"¯\\_(ツ)_/¯";async function updateContent(){if(window.location.hash){const title=window.location.hash.substring(1);const url=`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${ title }`;const response=await fetch(url+"/src.md");const md=await response.text();const top=document.title=title.replace(/_/g,' ');document.getElementById('content').innerHTML=`<br><a href="/#${ title }">${ top }</a> / <a href=${ url }/src.md>src.md</a><br>`+md.replace(/###### (.*?)$/gm,'<h6>$1</h6>').replace(/##### (.*?)$/gm,'<h5>$1</h5>').replace(/#### (.*?)$/gm,'<h4>$1</h4>').replace(/### (.*?)$/gm,'<h3>$1</h3>').replace(/## (.*?)$/gm,'<h2>$1</h2>').replace(/# (.*?)$/gm,'<h1>$1</h1>').replace(/\*\*(.*?)\*\*/g,'<b>$1</b>').replace(/\*(.*?)\*/g,'<i>$1</i>').replace(/!\[([^\]]*)\]\((assets\/[^\)]+)\)/g,`<img src="${ url }/$2" alt="$1">`).replace(/!\[([^\]]*)\]\((?!assets\/)([^)]+)\)/g,`<img src="$2" alt="$1">`).replace(/\[([^\]]+)\]\((.*?)\)/g,'<a href="$2">$1</a>').replace(/```([\s\S]*?)```/g,'<pre><code>$1</code></pre>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/^> (.*?)$/gm,'<blockquote>$1</blockquote>').replace(/([\s\S]*?)\n{2,}/g,(match,content)=>`<p>${content.trim()}</p>`)}else{document.title='aashvik';const response=await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');const data=await response.json();const titles=data.filter(item=>item.type==='dir').map(item=>item.name);titles.sort((a,b)=>b.localeCompare(a));const ul=document.createElement('ul');ul.id='writing';titles.forEach(title=>{const postLink=document.createElement('a');postLink.href=`/#${ title }`;postLink.textContent=title.replace(/_/g,' ');const li=document.createElement('li');li.appendChild(postLink);ul.appendChild(li)});document.getElementById('content').innerHTML='';document.getElementById('content').appendChild(ul)}}updateContent();window.addEventListener('hashchange',updateContent);</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>aashvik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png">
+    <style>
+        body {
+            font-family: helvetica neue, arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 5%;
+        }
+        body, a {color: #333333}
+        a:hover {color: darkorchid}
+        code {background-color: lightgray}
+        img {max-height: 50vh; max-width: 100%;}
+        iframe {max-width: 100%}
+    </style>
+</head>
+<body>
+    <strong><a href="/">AashvikT</a></strong>&emsp;<span id="greet"></span>
+    <br><br><div id="content"></div><br><br>
+    <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
+    <a href="https://250kb.club/aashvik-com">250kb.club</a>
+    <br>
+    git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) /
+    <a href="https://discord.com/users/828870867424378921">discord</a> /
+    <a href="mailto:its.aashvik.tyagi@gmail.com">mail</a>
+    <br>
+    © 2024 AshT. All rights burgled by raccoons.
+    <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io">Source code</a>
+    is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
+    <a href="https://github.com/AashvikTyagi/writing">content</a> is <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA</a>.
+    <script>
+        const today = new Date(), m = today.getMonth(), d = today.getDate();
+        document.getElementById('greet').innerHTML = m==1 && d==7 ? "e" :
+            m==1 && d==13 ? "📻" :
+            m==2 && d==14 ? "π" :
+            m==3 && d==25 ? "🍰" :
+            m==3 && d==26 ? "👽" :
+            (m==5 || m==11) && d==21 ? "🔥❄️" :
+            m==8 && d==26 ? "🤖" :
+            m==9 && d==23 ? "mol" :
+            m==9 && d==25 ? "🎃" :
+            m==11 && d==25 ? "🎄" :
+            "¯\\_(ツ)_/¯";
+        async function updateContent() {
+            if (window.location.hash) {
+                const title = window.location.hash.substring(1);
+                const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${title}`;
+                const response = await fetch(url+"/src.md");
+                const md = await response.text();
+                const top = document.title = title.replace(/_/g, ' ');
+                document.getElementById('content').innerHTML =
+                    `<br><a href="/#${title}">${top}</a> / <a href=${url}/src.md>src.md</a><br>`
+                    + md.replace(/###### (.*?)$/gm, '<h6>$1</h6>')
+                        .replace(/##### (.*?)$/gm, '<h5>$1</h5>')
+                        .replace(/#### (.*?)$/gm, '<h4>$1</h4>')
+                        .replace(/### (.*?)$/gm, '<h3>$1</h3>')
+                        .replace(/## (.*?)$/gm, '<h2>$1</h2>')
+                        .replace(/# (.*?)$/gm, '<h1>$1</h1>')
+                        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                        .replace(/\*(.*?)\*/g, '<i>$1</i>')
+                        .replace(/!\[([^\]]*)\]\((assets\/[^\)]+)\)/g, `<img src="${url}/$2" alt="$1">`)
+                        .replace(/!\[([^\]]*)\]\((?!assets\/)([^)]+)\)/g, `<img src="$2" alt="$1">`)
+                        .replace(/\[([^\]]+)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+                        .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+                        .replace(/`([^`]+)`/g, '<code>$1</code>')
+                        .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
+                        .replace(/([\s\S]*?)\n{2,}/g, (match, content) => `<p>${content.trim()}</p>`)
+            } else {
+                document.title = 'aashvik';
+                const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
+                const data = await response.json();
+                const titles = data.filter(item => item.type === 'dir').map(item => item.name);
+                titles.sort((a, b) => b.localeCompare(a));
+                const ul = document.createElement('ul');
+                ul.id = 'writing';
+                titles.forEach(title => {
+                    const postLink = document.createElement('a');
+                    postLink.href = `/#${title}`;
+                    postLink.textContent = title.replace(/_/g, ' ');
+                    const li = document.createElement('li');
+                    li.appendChild(postLink);
+                    ul.appendChild(li);
+                });
+                document.getElementById('content').innerHTML = '';
+                document.getElementById('content').appendChild(ul);
+            }
+        }
+        updateContent();
+        window.addEventListener('hashchange', updateContent);
+    </script>
+</body>
+</html>
