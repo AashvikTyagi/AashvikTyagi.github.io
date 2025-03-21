@@ -11,7 +11,7 @@
         @font-face { font-family: Source Code Pro; src: url('font/SourceCodePro-VariableFont_wght.ttf'); font-weight: 200 900; font-style: normal; }
         @font-face { font-family: Source Code Pro; src: url('font/SourceCodePro-Italic-VariableFont_wght.ttf'); font-weight: 200 900; font-style: italic; }
         body { font-family: Open Sans, sans-serif; background-color: whitesmoke; margin: 5%; }
-        code, pre, textarea { font-family: Source Code Pro, monospace; background-color: lightgray; }
+        code, pre, textarea { font-family: Source Code Pro, monospace; white-space: pre-wrap; background-color: lightgray; }
         body, a { color: #333333 }
         a:hover { color: darkorchid }
         img { max-height: 50vh; max-width: 100%; }
@@ -61,14 +61,14 @@
                         .replace(/### (.*?)$/gm, '<h3>$1</h3>')
                         .replace(/## (.*?)$/gm, '<h2>$1</h2>')
                         .replace(/# (.*?)$/gm, '<h1>$1</h1>')
-                        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-                        .replace(/\*(.*?)\*/g, '<i>$1</i>')
                         .replace(/!\[([^\]]*)\]\((assets\/[^\)]+)\)/g, `<img src="${url}/$2" alt="$1">`)
                         .replace(/!\[([^\]]*)\]\((?!assets\/)([^)]+)\)/g, `<img src="$2" alt="$1">`)
                         .replace(/\[([^\]]+)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-                        .replace(/```([\s\S]*?)```/g, (match, content) => `<pre><code>${content.trim()}</code></pre>`)
                         .replace(/`([^`]+)`/g, '<code>$1</code>')
+                        .replace(/```([\s\S]*?)```/g, (match, content) => `<pre><code>${content.trim()}</code></pre>`)
                         .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
+                        .replace(/(\*\*|__)(.*?)\1/g, '<b>$2</b>')
+                        .replace(/(\*|_)(.*?)\1/g, '<i>$2</i>')
                         .replace(/([\s\S]*?)\n{2,}/g, (match, content) => `<p>${content.trim()}</p>`)
             } else {
                 document.title = 'aashvik';
