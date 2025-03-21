@@ -55,7 +55,8 @@
                 const top = document.title = title.replace(/_/g, ' ');
                 document.getElementById('content').innerHTML =
                     `<br><a href="/#${title}">${top}</a> / <a href=${url}/src.md>src.md</a><br>`
-                    + md.replace(/###### (.*?)$/gm, '<h6>$1</h6>')
+                        + md.replace('    ', '&emsp;')
+                         .replace(/###### (.*?)$/gm, '<h6>$1</h6>')
                         .replace(/##### (.*?)$/gm, '<h5>$1</h5>')
                         .replace(/#### (.*?)$/gm, '<h4>$1</h4>')
                         .replace(/### (.*?)$/gm, '<h3>$1</h3>')
