@@ -69,7 +69,7 @@
                         .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
                         .replace(/`([^`]+)`/g, '<code>$1</code>')
                         .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
-                        .replace(/([^\n]+)\n/g, '<p>$1</p>');
+                        .replace(/([\s\S]*?)\n{2,}/g, (match, content) => `<p>${content.trim()}</p>`)
             } else {
                 document.title = 'aashvik';
                 const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
