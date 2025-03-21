@@ -66,7 +66,7 @@
                         .replace(/!\[([^\]]*)\]\((assets\/[^\)]+)\)/g, `<img src="${url}/$2" alt="$1">`)
                         .replace(/!\[([^\]]*)\]\((?!assets\/)([^)]+)\)/g, `<img src="$2" alt="$1">`)
                         .replace(/\[([^\]]+)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-                        .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+                        .replace(/```([\s\S]*?)```/g, (match, content) => `<pre><code>${content.trim()}</code></pre>`)
                         .replace(/`([^`]+)`/g, '<code>$1</code>')
                         .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
                         .replace(/([\s\S]*?)\n{2,}/g, (match, content) => `<p>${content.trim()}</p>`)
