@@ -20,7 +20,7 @@
 </head>
 <body>
     <strong><a href="/">AashvikT</a></strong>&emsp;<span id="greet"></span>
-    <br><br><div id="content"></div><br><br>
+    <br><br><div id="content"></div><br>
     <a href="https://validator.w3.org/nu/?doc=https://aashvik.com">w3c xhtml✓</a>&ensp;
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://aashvik.com">w3c css✓</a>&ensp;
     <a href="https://250kb.club/aashvik-com">250kb.club</a>
@@ -58,8 +58,9 @@
                 document.getElementById('content').innerHTML =
                     `<br><a href="/#${title}">${top}</a> / <a href=${url}/src.md>src.md</a><br>`
                         + marked.parse(md.replace(/!\[([^\]]+)\]\(assets\/([^)]+)\)/g, (match, title, file) => {
-                        return `![${title}](${url}/assets/${file})`;
-                    }));
+                            return `![${title}](${url}/assets/${file})`;
+                        }))
+                        + '<br>';
             } else {
                 document.title = 'aashvik';
                 const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
