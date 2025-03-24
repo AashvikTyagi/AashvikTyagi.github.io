@@ -77,6 +77,7 @@
         }
         updateContent();
         window.addEventListener('hashchange', updateContent);
+        videos.forEach(document.querySelectorAll('video')=>{video.setAttribute('controls', 'true');});
     </script>
 </body>
 </html>
