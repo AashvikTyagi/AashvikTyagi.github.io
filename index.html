@@ -56,8 +56,8 @@
                 const top = document.title = title.replace(/_/g, ' ');
                 document.getElementById('content').innerHTML =
                     `<br><a href="/#${title}">${top}</a> / <a href=${url}/src.md>src.md</a><br>`
-                        + marked.parse(md.replace(/!\[([^\]]+)\]\(assets\/([^)]+)\)/g, (match, title, file) => {
-                            return `![${title}](${url}/assets/${file})`;
+                        + marked.parse(md.replace(/(?!\s)assets\//g, (match) => {
+                            return `{$url}${match}`;
                         }));
             } else {
                 document.title = 'aashvik';
