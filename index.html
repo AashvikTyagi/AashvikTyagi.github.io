@@ -62,15 +62,14 @@
                     + marked.parse(md.replace(/(?<!\s)assets\//g, `${url}/$&`));
             } else {
                 document.title = 'aashvik';
-                titles.sort((a, b) => b.localeCompare(a));
                 const ul = document.createElement('ul');
                 ul.id = 'writing';
                 Object.keys(data).sort((a, b) => b.localeCompare(a)).forEach(title => {
                     const li = document.createElement('li');
-                    const link = document.createElement('a');
-                    link.href = `/#${indexData[title]}`;
-                    link.textContent = title;
-                    li.appendChild(postLink);
+                    const a = document.createElement('a');
+                    a.href = '/#' + indexData[title];
+                    a.textContent = title;
+                    li.appendChild(a);
                     ul.appendChild(li);
                 });
                 document.getElementById('content').innerHTML = '';
