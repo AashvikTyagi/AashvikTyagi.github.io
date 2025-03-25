@@ -52,28 +52,24 @@
             const responseIndex = await fetch('https://raw.githubusercontent.com/AashvikTyagi/writing/main/index.json');
             const indexData = await responseIndex.json();
             if (window.location.hash) {
-                const name = window.location.hash.substring(1);
-                const title = Object.keys(indexData).find(key => indexData[key] === name);
-                const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${name}`;
+                const short = window.location.hash.substring(1);
+                const title = Object.keys(indexData).find(key => indexData[key] === short);
+                const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${short}`;
                 const response = await fetch(url + '/src.md');
                 const md = await response.text();
                 document.getElementById('content').innerHTML =
-                    `<br><a href="/#${name}">${document.title = title.replace(/_/g, ' ')}</a> / <a href=${url}/src.md>src.md</a><br>`
+                    `<br><a href="/#${short}">${document.title = title.replace(/_/g, ' ')}</a> / <a href=${url}/src.md>src.md</a><br>`
                     + marked.parse(md.replace(/(?<!\s)assets\//g, `${url}/$&`));
             } else {
                 document.title = 'aashvik';
-                const response = await fetch('https://api.github.com/repos/aashviktyagi/writing/contents/');
-                const data = await response.json();
-                const titles = data.filter(item => item.type === 'dir').map(item => item.name);
                 titles.sort((a, b) => b.localeCompare(a));
                 const ul = document.createElement('ul');
                 ul.id = 'writing';
-                titles.forEach(title => {
-                    const name = indexData[title];
-                    const postLink = document.createElement('a');
-                    postLink.href = `/#${name}`;
-                    postLink.textContent = title.replace(/_/g, ' ');
+                Object.keys(data).sort((a, b) => b.localeCompare(a)).forEach(title => {
                     const li = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `/#${indexData[title]}`;
+                    link.textContent = title;
                     li.appendChild(postLink);
                     ul.appendChild(li);
                 });
