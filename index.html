@@ -19,7 +19,6 @@
 </head>
 <body>
     <strong><a href="/">AashvikT</a></strong>&emsp;<span id="greet"></span>
-    <h1>CURRENTLY IN MAINTENANCE, TREAD CARFULLY</h1>
     <br><br><div id="content"></div><br>
     git(<a href="https://github.com/AashvikTyagi">hub</a>, <a href="https://gitlab.com/AashvikTyagi">lab</a>) /
     <a href="https://discord.com/users/828870867424378921">discord</a> /
@@ -68,7 +67,7 @@
                     const li = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = '/#' + indexJSON[title];
-                    a.textContent = title;
+                    a.textContent = title.replace(/_/g, ' ');
                     li.appendChild(a);
                     ul.appendChild(li);
                 });
