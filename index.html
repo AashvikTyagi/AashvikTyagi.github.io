@@ -57,7 +57,7 @@
                 const response = await fetch(url + '/src.md');
                 const md = await response.text();
                 document.getElementById('content').innerHTML =
-                    `<br><a href="/#${short}">${document.title = title.replace(/_/g, ' ')}</a> / <a href=${url}/src.md>src.md</a><br>`
+                    `<br><a href="/#${short}">${document.title = title}</a> / <a href=${url}/src.md>src.md</a><br>`
                     + marked.parse(md.replace(/(?<!\s)assets\//g, `${url}/$&`));
             } else {
                 document.title = 'aashvik';
@@ -67,7 +67,7 @@
                     const li = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = '/#' + indexJSON[title];
-                    a.textContent = title.replace(/_/g, ' ');
+                    a.textContent = title;
                     li.appendChild(a);
                     ul.appendChild(li);
                 });
