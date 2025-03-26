@@ -57,7 +57,7 @@
                 const response = await fetch(url + '/src.md');
                 const md = await response.text();
                 document.getElementById('content').innerHTML =
-                    `<br><a href="/#${short}">${document.title = title}</a> / <a href=${url}/src.md>src.md</a><br>`
+                    `<br><a href="/#${short}">${document.title = title; short}</a> / <a href=${url}/src.md>src.md</a><br>`
                     + marked.parse(md.replace(/(?<!\s)assets\//g, `${url}/$&`));
             } else {
                 document.title = 'aashvik';
