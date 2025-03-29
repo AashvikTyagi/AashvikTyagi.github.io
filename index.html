@@ -50,6 +50,12 @@
         }
         updateContent();
         window.addEventListener('hashchange', updateContent);
+        document.querySelectorAll('li > a').forEach(anchor => {
+            const li = anchor.parentElement;
+            const hrefText = anchor.getAttribute('href');
+            const textNode = document.createTextNode(hrefText + ' ');
+            li.insertBefore(textNode, anchor);
+        });
     </script>
 </body>
 </html>
