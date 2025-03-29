@@ -48,7 +48,7 @@
             const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${document.title = window.location.hash.slice(1) || 'index'}`;
             document.getElementById('content').innerHTML = marked.parse((await(await fetch(`${url}/src.md`)).text()).replace(/(?<=["(])assets\//g,`${url}/assets/`));
             // testing something for index page here:
-            document.querySelectorAll('li > a').forEach(a => {
+            for (const a of document.querySelectorAll('li > a')) {
                 const codeElement = document.createElement('code');
                 const md = (
                     await(
