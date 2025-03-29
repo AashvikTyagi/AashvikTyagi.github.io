@@ -47,11 +47,12 @@
         async function updateContent() {
             const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${document.title = window.location.hash.slice(1) || 'index'}`;
             document.getElementById('content').innerHTML = marked.parse((await(await fetch(`${url}/src.md`)).text()).replace(/(?<=["(])assets\//g,`${url}/assets/`));
-            document.querySelectorAll('li > a').forEach(anchor => {
-                const li = anchor.parentElement;
-                const hrefText = anchor.getAttribute('href');
-                const textNode = document.createTextNode(hrefText + ' ');
-                li.insertBefore(textNode, anchor);
+            // testing something for index page here:
+            document.querySelectorAll('li > a').forEach(a => {
+                anchor.parentElement.insertBefore(
+                    document.createTextNode(`<code>${a.getAttribute('href').slice(2)}</code>`),
+                    a
+                );
             });
         }
         updateContent();
