@@ -50,11 +50,9 @@
             // testing something for index page here:
             document.querySelectorAll('li > a').forEach(a => {
                 const codeElement = document.createElement('code');
-                codeElement.textContent = a.getAttribute('href').slice(2);
-                a.parentElement.insertBefore(
-                    codeElement,
-                    a
-                );
+                const md = (await(await fetch(`https://raw.githubusercontent.com/AashvikTyagi/writing/main/${a.getAttribute('href').slice(2)}`)).text())
+                codeElement.textContent = md.substring(0, md.indexOf("\n"));
+                a.parentElement.insertBefore(codeElement, a);
             });
         }
         updateContent();
