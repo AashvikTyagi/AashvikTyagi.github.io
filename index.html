@@ -49,8 +49,10 @@
             document.getElementById('content').innerHTML = marked.parse((await(await fetch(`${url}/src.md`)).text()).replace(/(?<=["(])assets\//g,`${url}/assets/`));
             // testing something for index page here:
             document.querySelectorAll('li > a').forEach(a => {
+                const codeElement = document.createElement('code');
+                codeElement.textContent = a.getAttribute('href').slice(2);
                 a.parentElement.insertBefore(
-                    document.createTextNode(`<code>${a.getAttribute('href').slice(2)}</code>`),
+                    codeElement,
                     a
                 );
             });
