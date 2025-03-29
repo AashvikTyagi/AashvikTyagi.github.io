@@ -49,7 +49,7 @@
             document.getElementById('content').innerHTML = marked.parse((await(await fetch(`${url}/src.md`)).text()).replace(/(?<=["(])assets\//g,`${url}/assets/`));
             // testing something for index page here:
             document.querySelectorAll('li > a').forEach(a => {
-                anchor.parentElement.insertBefore(
+                a.parentElement.insertBefore(
                     document.createTextNode(`<code>${a.getAttribute('href').slice(2)}</code>`),
                     a
                 );
