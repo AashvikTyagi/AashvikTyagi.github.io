@@ -45,7 +45,7 @@
             "¯\\_(ツ)_/¯";
         async function updateContent() {
             const url = `https://raw.githubusercontent.com/AashvikTyagi/writing/main/${ document.title = window.location.hash.slice(1) || 'index' }`;
-            document.getElementById('content').innerHTML = (await(await fetch(`${url}/src.md`)).text()).replace(/(?<=["(])assets\//g,`${url}/assets/`);
+            document.getElementById('content').innerHTML = (await(await fetch(`${url}/src.html`)).text()).replace(/(?<==")assets\//g, `${url}/assets/`);
         }
         updateContent();
         window.addEventListener('hashchange', updateContent);
