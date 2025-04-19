@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.png">
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial sans-serif; margin: 5%; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 5%; }
         body, a { color: #202020 }
         a:hover, #content a, strong a { text-decoration: none; color: orangered; }
         code, pre, textarea { font-family: monospace; width: fit-content; max-width: 100%; overflow-x: auto; background-color: whitesmoke; }
@@ -30,6 +30,8 @@
     is <a href="https://github.com/AashvikTyagi/AashvikTyagi.github.io/blob/main/LICENSE.md">MIT</a>,
     <a href="https://github.com/AashvikTyagi/writing">content</a> is <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA</a>.
     <script>
+        const names = ["AASHVIK","NOSTERA.","Gah.","NearLike"];
+        document.body.firstElementChild.firstElementChild.innerHTML = names[Math.floor(Math.random()*names.length)];
         const today = new Date(), m = today.getMonth(), d = today.getDate();
         document.getElementById('greet').innerHTML =
             m==1 && d==7 ? "e" :
